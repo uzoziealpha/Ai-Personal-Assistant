@@ -1,7 +1,7 @@
 import requests
 
 # Replace with your DeepSeek API key
-DEEPSEEK_API_KEY = "sk-7df095967fcd40fb9942443e2d9fadce"
+DEEPSEEK_API_KEY = ""
 
 # DeepSeek API endpoint (replace with the actual endpoint)
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"  # Example endpoint
