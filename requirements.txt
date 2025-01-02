@@ -1,4 +1,4 @@
-openai
+textblob
 langchain
 langchain-community
 faiss-cpu
