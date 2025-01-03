@@ -21,7 +21,7 @@ CORS(app)  # Enable CORS for all routes
 translator = Translator()
 
 # Replace with your DeepSeek API key
-DEEPSEEK_API_KEY = ""
+DEEPSEEK_API_KEY = "sk-7df095967fcd40fb9942443e2d9fadce"
 
 # DeepSeek API endpoint (replace with the actual endpoint)
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"  # Example endpoint

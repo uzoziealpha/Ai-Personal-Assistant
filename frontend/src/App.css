@@ -1,187 +1,79 @@
 .App {
-  text-align: center;
   font-family: Arial, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 20px;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.main-container {
-  display: flex;
-  gap: 20px;
-}
-
-.chat-container {
-  flex: 2;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-.chat-history {
-  height: 400px;
-  overflow-y: auto;
-  margin-bottom: 20px;
-}
-
-.chat-message {
-  margin-bottom: 15px;
-}
-
-.chat-bubble {
-  max-width: 70%;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.chat-bubble.user {
+.navbar {
   background-color: #007bff;
   color: white;
-  margin-left: auto;
-}
-
-.chat-bubble.bot {
-  background-color: #f1f1f1;
-  color: #333;
-  margin-right: auto;
-}
-
-.chat-media {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.typing-indicator {
-  display: flex;
-  align-items: center;
-  color: #888;
-  font-size: 14px;
-}
-
-.typing-animation {
-  display: flex;
-  margin-left: 8px;
-}
-
-.typing-animation .dot {
-  width: 6px;
-  height: 6px;
-  background-color: #888;
-  border-radius: 50%;
-  margin: 0 2px;
-  animation: bounce 1.4s infinite ease-in-out;
-}
-
-.typing-animation .dot:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.typing-animation .dot:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-@keyframes bounce {
-  0%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-6px); }
-}
-
-.chat-input {
-  display: flex;
-  gap: 10px;
-}
-
-.chat-input input {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.chat-input button {
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.chat-input button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.logs-container {
-  flex: 1;
-}
-
-.logs-box {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  margin-top: 10px;
-}
-
-.log-item {
-  margin-bottom: 15px;
 }
 
 .dashboard {
   margin-top: 20px;
 }
 
-.charts {
-  display: flex;
-  gap: 20px;
+.chat-section {
+  margin-bottom: 20px;
 }
 
-.chart-container {
-  flex: 1;
+.chatbox {
+  max-height: 200px;
+  overflow-y: auto;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.score {
-  margin-top: 20px;
+.chat-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.score span {
+.chat-message.user {
+  background-color: #d1ecf1;
+}
+
+.chat-message.ai {
+  background-color: #f8d7da;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input button {
   margin-left: 10px;
-  font-size: 20px;
-}
-
-.export-options {
-  margin-top: 20px;
-}
-
-.export-options button {
-  margin: 5px;
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
+  background: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-.export-options input {
-  padding: 10px;
-  font-size: 16px;
+.map-section {
+  margin-top: 20px;
+}
+
+.charts-section {
+  margin-top: 20px;
+}
+
+.chart-selector {
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-right: 10px;
 }
